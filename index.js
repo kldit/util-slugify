@@ -15,7 +15,7 @@ Object.defineProperty(String.prototype, 'slugify',
             .cleanSpecialChars()
             .trim()
             .toLowerCase()
-            .replace(/[^a-z0-9-]/, '-')
-            .replace(/-+/, '-');
+            .replace(/[^a-z0-9-]/g, '-')
+            .replace(/-+/g, '-');
     }
 });

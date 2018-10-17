@@ -13,5 +13,5 @@ require("@kldit/util-slugify");
 Run at any where of your code.
 ```javascript
 "Teste plutôt good nicht".slugify() // "teste-plutot-good-nicht"
-"TESTE".firstCharToLowerCase() // "tESTE"
+"TESTE".firstCharToLowerCase() // "teste"
 ```
