@@ -1,0 +1,26 @@
+{
+  "name": "@kldit/util-slugify",
+  "version": "1.0.0",
+  "description": "slugify string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kldit/util-slugify.git"
+  },
+  "author": "Orlando Leite <orlando@webdefault.com.br>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kldit/util-slugify/issues"
+  },
+  "homepage": "https://github.com/kldit/util-slugify#readme",
+  "keywords": [
+    "string",
+    "slugify"
+  ],
+  "dependencies": {
+    "@kldit/util-clean-special-chars": "^1.0.1"
+  }
+}
