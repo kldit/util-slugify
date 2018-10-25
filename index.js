@@ -4,18 +4,21 @@
  * util functions
  */
 
-require('@kldit/util-clean-special-chars');
-
-Object.defineProperty(String.prototype, 'slugify',
+if(!String.prototype.slugify)
 {
-    enumerable: false,
-    value: function ()
+    require('@kldit/util-clean-special-chars');
+
+    Object.defineProperty(String.prototype, 'slugify',
     {
-        return this
-            .cleanSpecialChars()
-            .trim()
-            .toLowerCase()
-            .replace(/[^a-z0-9-]/g, '-')
-            .replace(/-+/g, '-');
-    }
-});
+        enumerable: false,
+        value: function ()
+        {
+            return this
+                .cleanSpecialChars()
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-z0-9-]/g, '-')
+                .replace(/-+/g, '-');
+        }
+    });
+}
